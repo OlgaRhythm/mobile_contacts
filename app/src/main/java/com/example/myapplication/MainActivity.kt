@@ -123,6 +123,7 @@ class MainActivity : ComponentActivity() {
             return
         }
 
+        
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(contacts) { contact ->
                 Column(
