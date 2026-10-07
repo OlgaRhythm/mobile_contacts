@@ -35,6 +35,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import kotlinx.parcelize.Parcelize
+import androidx.core.net.toUri
 
 @Parcelize
 data class Contact(val name: String, val number: String) : Parcelable
@@ -81,7 +82,7 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun openDialer(number: String) {
-        val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$number"))
+        val intent = Intent(Intent.ACTION_DIAL, "tel:$number".toUri())
         startActivity(intent)
     }
 
