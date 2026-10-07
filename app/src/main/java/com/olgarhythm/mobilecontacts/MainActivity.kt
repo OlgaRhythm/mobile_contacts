@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.olgarhythm.mobilecontacts
 
 import android.Manifest
 import android.content.Intent

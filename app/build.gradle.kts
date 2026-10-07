@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "com.olgarhythm.mobilecontacts"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
+        applicationId = "com.olgarhythm.mobilecontacts"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
