@@ -124,7 +124,14 @@ class MainActivity : ComponentActivity() {
             return
         }
 
-        
+        if (contacts.isEmpty()) {
+            Text(
+                text = "No contacts found",
+                modifier = Modifier.padding(16.dp)
+            )
+            return
+        }
+
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(contacts) { contact ->
                 Column(
